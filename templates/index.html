@@ -1,0 +1,20 @@
+<!-- form.html -->
+<html>
+  <head>
+    <title>Edge Detection Program</title>
+  </head>
+  <body>
+    <h1>Upload Your Image for EDGE DETECTION </h1>
+    <form id="image-form" action="{{ url_for('process_image') }}" method="POST" enctype="multipart/form-data">
+      <label for="img">Choose your Image: </label>
+      <input name="FN" type="text" placeholder="FileName">
+      <input type="file" name="in_img" value="Select..."><br><br>
+      <label for="threshold">Set threshold:</label>
+      <input name="threshold" type="number" min="0" max="100" step="5">
+
+      <input type="submit" value="Submit">
+    </form>
+    <img id="output-image" src="{{output_img}}">
+      </script>
+  </body>
+</html>
