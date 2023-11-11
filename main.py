@@ -38,7 +38,7 @@ def submit():
     password = form_data.get('password')
 
     # Do something with the form data
-    # ...
+    # .....
 
     return "Form data received. Name: {}, Email: {}, Password: {}".format(name, email, password)
 
